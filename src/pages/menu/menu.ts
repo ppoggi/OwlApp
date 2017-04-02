@@ -17,9 +17,7 @@ export class MenuPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuPage');
-  }
+  ionViewDidLoad() {}
 
   toFBSettings() { this.navCtrl.push(FbsettingsPage) }
   toPreferences(){ this.navCtrl.push(PreferencesPage) }

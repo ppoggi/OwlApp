@@ -19,7 +19,7 @@ export class DepartmentsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
     this.departments = navParams.get('departments');
-    this.title = navParams.get('title');
+    this.title = navParams.get('title');    
   }
 
   ionViewDidLoad() {

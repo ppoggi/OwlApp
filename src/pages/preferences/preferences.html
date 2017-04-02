@@ -7,12 +7,179 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>preferences</ion-title>
+    <ion-title>Filters</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
+
+  <ion-list>
+  <ion-item>
+    <ion-label>Department</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="Business">Business</ion-option>
+      <ion-option value="Education">Education</ion-option>
+      <ion-option value="Fine Art">Fine Art</ion-option>
+      <ion-option value="Humanities">Humanities</ion-option>
+      <ion-option value="Engineering">Engineering</ion-option>
+      <ion-option value="Medicine">Medicine</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+  <ion-list no-border>
+    <ion-list-header>
+      Geographic
+    </ion-list-header>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        Urban
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        Suburban
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        Rural
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+
+  <ion-list no-border>
+    <ion-list-header>
+      Region
+    </ion-list-header>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        Central
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        East
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        North East
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        North West
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        South East
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        South West
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        West
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list no-border>
+    <ion-list-header>
+      Rank
+    </ion-list-header>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        1-50
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        50-100
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        100-150
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        150-200
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list no-border>
+    <ion-list-header>
+      Population
+    </ion-list-header>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        1-5k
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        5k-10k
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        10k-15k
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-toggle checked="false"></ion-toggle>
+      <ion-label>
+        >15k
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>

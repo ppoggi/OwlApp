@@ -12,14 +12,14 @@
 <ion-content padding>
 
   <ion-list>
+    <ion-item (click)='toPreferences()'>
+      <ion-icon name="ios-list-box-outline" item-left></ion-icon>
+        Univeristy Filters
+      <ion-icon name="ios-arrow-forward" color="primary" item-right></ion-icon>
+    </ion-item>
     <ion-item (click)='toFBSettings()'>
       <ion-icon name="logo-facebook" color="facebook" item-left></ion-icon>
         Facebook
-      <ion-icon name="ios-arrow-forward" color="primary" item-right></ion-icon>
-    </ion-item>
-    <ion-item (click)='toPreferences()'>
-      <ion-icon name="ios-list-box-outline" item-left></ion-icon>
-        Univeristy Preferences
       <ion-icon name="ios-arrow-forward" color="primary" item-right></ion-icon>
     </ion-item>
     <ion-item (click)='toAbout()'>

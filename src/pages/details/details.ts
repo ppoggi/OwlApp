@@ -8,6 +8,7 @@ import { ModalController } from 'ionic-angular';
 import { ProfessorsPage } from '../professors/professors';
 import { DepartmentsPage } from '../departments/departments';
 import { LabsPage } from '../labs/labs';
+import { UniversityProfessors } from '../../services/university/university.professors';
 
 
 
@@ -39,23 +40,28 @@ export class DetailsPage {
     this.updateList();
   }
   toDepartments(item,title){
-    console.log(item)
-    let modal = this.modalCtrl.create(DepartmentsPage,{departments:item, title:title},{enableBackdropDismiss:false});
+    let modal = this.modalCtrl.create(
+      DepartmentsPage,
+      {departments:item,title:title},
+      {enableBackdropDismiss:false}
+    );
     modal.present();
 
   }
-  toProfessors(professors){
+  toProfessors(name){
 
-  }
-  toLabs(labs){
-
+    let modal = this.modalCtrl.create(
+      DepartmentsPage,
+      {departments:UniversityProfessors, title:name},
+      {enableBackdropDismiss:false}
+    );
+    modal.present();
   }
   updateList(){
     this.storage.ready().then(() => {
        this.storage.get("dbList").then((oldList) => {
          const storageHandler = new StorageHandler();
-         const updatedList = storageHandler.updateUniversityList(this.item, oldList);
-         console.log(updatedList, this.item);
+         const updatedList = storageHandler.updateUniversityList(this.item, oldList);         
          this.storage.set("dbList", updatedList);
          this.events.publish("dbList:update");
        })

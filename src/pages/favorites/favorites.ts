@@ -17,7 +17,6 @@ export class FavoritesPage {
 
     storage.ready().then(() => {
        storage.get("dbList").then((val) => {
-         console.log(val)
          this.universities = val;
        })
      });
@@ -27,7 +26,7 @@ export class FavoritesPage {
       this.refreshData();
     })
   }
-  refreshData(){    
+  refreshData(){
     this.storage.get("dbList").then((val) => {
       this.universities = val;
     })
